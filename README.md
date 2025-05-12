@@ -12,8 +12,6 @@ A proposta foi construir um CRUD completo com as seguintes funcionalidades:
 ✅ **Editar**  
 ✅ **Deletar** tarefas
 
----
-
 ## 🧱 O que foi construído?
 
 A aplicação permite que o usuário:
@@ -25,16 +23,12 @@ A aplicação permite que o usuário:
 - **Marque uma tarefa como concluída**.
 - **Desmarque uma tarefa como concluída**.
 
----
-
 ## 📚 O que foi aprendido
 
 - **Comunicação entre frontend e backend**: A integração entre o frontend (em Svelte) e o backend (Express) foi realizada, permitindo a troca de dados.
 - **Integração de aplicações web com banco de dados**: O banco de dados MySQL foi utilizado para armazenar as tarefas.
 - **Manipulação de dados com SQL básico**: As operações de **SELECT**, **INSERT**, **UPDATE** e **DELETE** foram implementadas.
 - **Organização do projeto**: A estrutura do código segue uma clara separação entre o frontend e o backend.
-
----
 
 ## 🚀 Entrega esperada
 
@@ -47,7 +41,6 @@ O código está funcional com todas as rotas implementadas:
 
 A aplicação está rodando localmente e o banco de dados MySQL foi configurado com uma tabela chamada `tarefas`.
 
----
 
 ## 🛠 Tecnologias Usadas
 
@@ -65,7 +58,6 @@ A aplicação está rodando localmente e o banco de dados MySQL foi configurado 
 
 - **MySQL**: Para gerenciar e armazenar as tarefas.
 
----
 
 ## 🏃‍♀️ Como rodar o projeto
 
@@ -128,7 +120,6 @@ No diretório frontend, execute o aplicativo:
 npm run dev
 ```
 
----
 
 ## 📄 Licença
 
