@@ -5,20 +5,26 @@ export async function getTasks() {
     return await res.json();
 }
 
-export async function addTask(title) {
+export async function addTask(newTaskTitle) {
+    const tarefa = newTaskTitle;
+    const estaConcluida = false;
+
     const res = await fetch(`${API_URL}/addTask`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ title })
+        body: JSON.stringify({ tarefa, estaConcluida })
     });
     return await res.json();
 }
 
-export async function updateTask(id, title, isConclued) {
+export async function updateTask(id, title, isClonclued) {
+    const tarefa = title;
+    const estaConcluida = isClonclued;
+
     const res = await fetch(`${API_URL}/updateTask/${id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ title, isConclued })
+        body: JSON.stringify({ tarefa, estaConcluida })
     });
     return await res.json();
 }
