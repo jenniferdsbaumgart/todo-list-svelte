@@ -9,15 +9,14 @@
   let newTaskTitle = "";
   let editingTaskId = null;
   let editedTitle = "";
-  let createdCount = 0;  // Contador de tarefas criadas
-  let completedCount = 0;  // Contador de tarefas concluídas
+  let createdCount = 0;
+  let completedCount = 0;
 
   onMount(async () => {
     tasks = await getTasks();
-    updateCounters();  // Atualiza os contadores assim que as tarefas são carregadas
+    updateCounters();
   });
 
-  // Função para atualizar os contadores
   function updateCounters() {
     createdCount = tasks.length;
     completedCount = tasks.filter(task => task.estaConcluida).length;
@@ -27,20 +26,20 @@
     if (!newTaskTitle.trim()) return;
     await addTask(newTaskTitle);
     tasks = await getTasks();
-    updateCounters();  // Atualiza os contadores
+    updateCounters();
     newTaskTitle = "";
   }
 
   async function handleDelete(id) {
     await deleteTask(id);
     tasks = await getTasks();
-    updateCounters();  // Atualiza os contadores
+    updateCounters();
   }
 
   async function toggleTask(task) {
     await updateTask(task.id, task.tarefa, !task.estaConcluida);
     tasks = await getTasks();
-    updateCounters();  // Atualiza os contadores
+    updateCounters();
   }
 
   function startEditing(task) {
@@ -58,7 +57,7 @@
     await updateTask(task.id, editedTitle, task.estaConcluida);
     editingTaskId = null;
     tasks = await getTasks();
-    updateCounters();  // Atualiza os contadores
+    updateCounters();
   }
 
   const hoje = new Date();
