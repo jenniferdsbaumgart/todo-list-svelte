@@ -63,7 +63,7 @@
 
   const hoje = new Date();
 
-  const dataFormatada = hoje.toLocaleDateString("pt-BR", {
+  const dataFormatada = hoje.toLocaleDateString("en-UK", {
     weekday: "long",
     day: "numeric",
     month: "long",
@@ -77,14 +77,14 @@
     class="max-w-lg max-h-[40rem] overflow-hidden mx-auto mt-8 pb-6 p-6 bg-violet-300 border-1 border-violet-300 rounded-xl"
   >
       <h1 class="text-3xl text-center tracking-wider text-zinc-900 mb-2">
-        O que você gostaria de fazer hoje?
+        What would you like to do today?
       </h1>
       
     <div class="flex gap-2 mb-2">
       <input
         class="flex-1 border border-zinc-300 rounded-lg px-3 bg-zinc-100 py-2"
         bind:value={newTaskTitle}
-        placeholder="Nova tarefa"
+        placeholder="New Task"
       />
       <button
         class="bg-teal-500 hover:bg-teal-400 text-white px-4 py-2 rounded-lg"
@@ -93,9 +93,9 @@
         <Icon icon="fluent:add-16-filled" width="20" height="20" />
       </button>
     </div>
-    <div class=" flex justify-between px-1 mb-1 text-zinc-500">
-        <p>Tarefas Criadas: {createdCount}</p>
-        <p>Tarefas Concluídas: {completedCount}</p>
+    <div class="flex text-xl justify-between px-1 mb-1 text-zinc-500">
+        <p>Created Tasks: {createdCount}</p>
+        <p>Completed Tasks: {completedCount}</p>
     </div>
 
     <ul class="space-y-2 max-h-[30rem] overflow-y-scroll">
