@@ -1,77 +1,77 @@
 # Todo List - CRUD 🎯
 
-Desenvolvi uma aplicação web simples com um CRUD de tarefas, utilizando as seguintes tecnologias:
+I developed a simple web application with a task CRUD (Create, Read, Update, Delete) functionality using the following technologies:
 
 - **Frontend**: Svelte
 - **Backend**: Express (Node.js)
 - **Banco de Dados**: MySQL
 
-A proposta foi construir um CRUD completo com as seguintes funcionalidades:
-✅ **Criar**  
-✅ **Listar**  
-✅ **Editar**  
-✅ **Deletar** tarefas
+The goal was to build a complete CRUD with the following features:
+✅ **Create**  
+✅ **List**  
+✅ **Update**  
+✅ **Delete** tasks
 
-## 🧱 O que foi construído?
+## 🧱  What Was Built?
 
-A aplicação permite que o usuário:
+The application allows the user to:
 
-- **Adicione uma nova tarefa**.
-- **Visualize a lista de tarefas** salvas no banco de dados (tanto as concluídas quanto as em aberto).
-- **Edite** o texto de uma tarefa existente.
-- **Exclua** uma tarefa.
-- **Marque uma tarefa como concluída**.
-- **Desmarque uma tarefa como concluída**.
+- Add a new task.
+- View the list of tasks stored in the database (both completed and pending tasks).
+- Edit the text of an existing task.
+- Delete a task.
+- Mark a task as completed.
+- Unmark a task as completed.
 
-## 📚 O que foi aprendido
+## 📚 What Was Learned
 
-- **Comunicação entre frontend e backend**: A integração entre o frontend (em Svelte) e o backend (Express) foi realizada, permitindo a troca de dados.
-- **Integração de aplicações web com banco de dados**: O banco de dados MySQL foi utilizado para armazenar as tarefas.
-- **Manipulação de dados com SQL básico**: As operações de **SELECT**, **INSERT**, **UPDATE** e **DELETE** foram implementadas.
-- **Organização do projeto**: A estrutura do código segue uma clara separação entre o frontend e o backend.
+- Frontend and Backend Communication: Integration between the frontend (Svelte) and the backend (Express) was successfully implemented, allowing data exchange.
+- Web Application Integration with Database: MySQL was used to store the tasks.
+- Data Manipulation with Basic SQL: The operations SELECT, INSERT, UPDATE, and DELETE were implemented.
+- Project Organisation: The code structure follows a clear separation between frontend and backend.
 
-## 🚀 Entrega esperada
+## 🚀  Expected Delivery
 
-O código está funcional com todas as rotas implementadas:
+The code is functional with all routes implemented:
 
-- **GET** para listar tarefas.
-- **POST** para criar tarefas.
-- **PUT** para editar tarefas.
-- **DELETE** para excluir tarefas.
+    - GET to list tasks.
+    - POST to create tasks.
+    - PUT to edit tasks.
+    - DELETE to delete tasks.
 
-A aplicação está rodando localmente e o banco de dados MySQL foi configurado com uma tabela chamada `tarefas`.
+The application is running locally, and the MySQL database has been configured with a table called `tarefas`.
 
 
-## 🛠 Tecnologias Usadas
+## 🛠 Technologies Used
 
 ### Frontend:
 
-- **Svelte**: Framework para construção de interfaces de usuário rápidas e reativas.
-- **tailwindCSS/HTML**: Para estilização e estrutura da página.
+- **Svelte**: A framework for building fast and reactive user interfaces.
+- **tailwindCSS/HTML**: For styling and page structure.
 
 ### Backend:
 
-- **Express (Node.js)**: Framework para criação de APIs RESTful.
-- **MySQL**: Banco de dados relacional para armazenamento das tarefas.
+- **Express (Node.js)**: Framework for creating RESTful APIs.
+- **MySQL**: Relational database for storing tasks.
 
-### Banco de Dados:
+### Database:
 
-- **MySQL**: Para gerenciar e armazenar as tarefas.
+- **MySQL**: MySQL: For managing and storing the tasks.
 
 
-## 🏃‍♀️ Como rodar o projeto
+## 🏃‍♀️ How to Run the Project
 
-### 1. Clonar o repositório
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/jenniferdsbaumgart/todo-list-svelte.git
 cd todo-list-svelte
 ```
 
-### 2. Configurar o banco de dados
+### 2. Configure the Database
 
-- Crie um banco de dados no MySQL com o nome todo_app
-- Execute o script SQL para criar a tabela tarefas:
+Create a database in MySQL named `todo_app`.
+Run the SQL script to create the `tarefas` table:
 ```sql
 CREATE TABLE tarefas (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -81,7 +81,7 @@ CREATE TABLE tarefas (
 );
 ```
 
-### 3. Instalar as dependências
+### 3. Install Dependencies
 
 Backend (Express + MySQL)
 ```bash
@@ -95,32 +95,32 @@ cd frontend
 npm install
 ```
 
-### 4. Configurar variáveis de ambiente
+### 4. Configure Environment Variables
 
-No backend, crie um arquivo .env e configure as credenciais do banco de dados:
+In the backend, create a .env file and configure the database credentials:
 ```bash
 DB_HOST=localhost
-DB_USER=seu_usuario
-DB_PASSWORD=sua_senha
+DB_USER=your_user
+DB_PASSWORD=your_password
 DB_NAME=todo_app
-DB_PORT=sua_port
+DB_PORT=your_port
 ```
 
-### 5. Rodar o backend
+### 5.  Run the Backend
 
-No diretório backend, execute o servidor:
+In the backend directory, run the server:
 ```bash
 node server.js
 ```
 
-### 6. Rodar o frontend
+### 6. Run the Frontend
 
-No diretório frontend, execute o aplicativo:
+In the frontend directory, run the application:
 ```bash
 npm run dev
 ```
 
 
-## 📄 Licença
+## 📄  License
 
-Este projeto está licenciado sob a MIT License - veja o arquivo LICENSE para mais detalhes.
+This project is licensed under the MIT License – see the LICENSE file for more details.
